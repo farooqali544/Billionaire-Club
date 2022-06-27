@@ -1,0 +1,140 @@
+.container {
+  background-color: black;
+  min-height: 94px;
+  height: 94px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.wrapper {
+  max-width: 1440px;
+  color: white;
+  flex: 1;
+  padding: 0px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  flex-shrink: 2;
+}
+
+.logoWrapper img {
+  width: 100%;
+  max-width: 200px;
+
+  min-width: 150px;
+}
+
+.linksWrapper {
+  flex-shrink: 0;
+}
+
+.linksWrapper ul {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+  font-size: 18px;
+  align-items: center;
+}
+
+.linksWrapper ul li {
+  cursor: pointer;
+  position: relative;
+}
+
+.linksWrapper ul li#active::after {
+  display: none;
+}
+
+.linksWrapper ul li::after {
+  content: "";
+  height: 4px;
+  width: 0;
+  border-radius: 5px;
+  background-color: #7918f2;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.2s ease-in-out;
+}
+
+.linksWrapper ul li:hover::after {
+  width: 100%;
+}
+
+.linksWrapper ul li#active {
+  color: #7918f2;
+  position: relative;
+  font-weight: 600;
+}
+
+.polygonWrapper {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menuBarWrapper {
+  display: none;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menuBarWrapper svg {
+  fill: white;
+  width: 32px;
+  height: 32px;
+}
+
+.menuBarWrapper svg rect{
+border-radius: 100px;
+}
+
+
+
+.activeMobileLink{
+    color: #7918f2;
+    position: relative;
+}
+
+.activeMobileLink::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: #7918f2;
+}
+
+@media only screen and (max-width: 1000px) {
+  .wrapper {
+    padding: 0px 20px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .linksWrapper {
+    display: none;
+  }
+
+  .menuBarWrapper {
+    display: flex;
+  }
+
+
+  .logoWrapper img{
+    max-width: 100px;
+    min-width: 40px;
+  }
+
+}

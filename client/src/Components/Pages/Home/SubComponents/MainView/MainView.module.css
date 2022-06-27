@@ -1,0 +1,290 @@
+.mainView {
+  display: flex;
+  flex-direction: row;
+  /* padding: 0px 20px; */
+  padding-right: 20px;
+  
+}
+
+.mainView .imageWrapper,
+.mainView .exclusiveContentWrapper {
+  display: flex;
+  flex: 1;
+}
+
+.imageWrapper {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.ape {
+  z-index: 10;
+  width: 100%;
+  width: 500px;
+ margin: 0px auto;
+
+}
+
+.circle {
+  position: absolute;
+  z-index: 9;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 550px;
+}
+
+.ellipse {
+  position: absolute;
+  margin-top: 20px;
+}
+
+.exclusiveContent {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  justify-content: space-around;
+
+  /* margin-right: 20px; */
+}
+
+.exclusiveHeading {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  z-index: 1;
+}
+.exclusiveHeading h1 {
+  font-weight: 700;
+}
+
+.exclusiveHeading span {
+  background: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  align-self: flex-end;
+  -webkit-text-fill-color: transparent;
+
+  margin-top: -30px;
+  font-size: 42px;
+}
+
+.exclusivePara {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  /* z-index: 1; */
+}
+
+.exclusivePara span {
+  color: #7918f2;
+  align-self: flex-end;
+}
+
+.ellipse2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.registerWrapper {
+  display: flex;
+  gap: 10px;
+  margin-top: 35px;
+}
+
+.registerWrapper input {
+  flex: 1;
+  border: 2px solid #7918f2;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 60px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.705);
+  font-size: 24px;
+  padding: 0px 10px;
+  outline: none;
+}
+
+.registerWrapper #customButton {
+  font-size: 28px;
+  padding: 0px 30px;
+}
+
+@media screen and (max-width: 1440px) {
+  .exclusiveHeading h1 {
+    font-size: 72px;
+  }
+
+  .exclusiveHeading span {
+    font-size: 40px;
+  }
+
+  .registerWrapper {
+    margin-top: 28px;
+    gap: 20px;
+  }
+
+  .registerWrapper input {
+    font-size: 18px;
+    height: 46px;
+  }
+
+  .registerWrapper #customButton {
+    font-size: 18px;
+  }
+
+  .ape {
+    max-width: 450px;
+    object-fit: contain;
+  }
+
+  .circle {
+    max-width: 450px;
+    object-fit: contain;
+  }
+
+  .ellipse,
+  .ellipse2 {
+    max-width: 270px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .exclusiveHeading h1 {
+    font-size: 56px;
+  }
+
+  .exclusiveHeading span {
+    font-size: 32px;
+    margin-top: -20px;
+  }
+
+  .ape{
+    max-width: 380px;
+  }
+
+  .circle{
+    max-width: 380px;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  .exclusiveHeading h1 {
+    font-size: 42px;
+  }
+
+  .exclusiveHeading span {
+    font-size: 26px;
+    margin-top: -10px;
+    align-self: flex-start;
+  }
+
+  .ape{
+    max-width: 320px;
+  }
+
+  .circle{
+    max-width: 300px;
+  }
+
+  .ellipse2 {
+    display: none;
+  }
+
+  .ellipse {
+    display: none;
+  }
+
+  .exclusivePara {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .exclusiveHeading h1 {
+    font-size: 36px;
+  }
+
+  .exclusiveHeading span {
+    font-size: 20px;
+    margin-top: -10px;
+    align-self: flex-start;
+  }
+
+  .mainView {
+    padding: 0px 20px;
+    padding-top: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .circle {
+    max-width: 400px;
+    top: 0px;
+  }
+
+  /* .ellipse2 {
+    display: block;
+    top: 0px;
+    width: 280px;
+  } */
+
+  .mainView .imageWrapper {
+    flex: 0;
+    min-height: 410px;
+  }
+
+  .mainView .exclusiveContent {
+    max-width: none;
+  }
+
+  .exclusiveContent .exclusiveHeading {
+    margin-top: 0px;
+  }
+
+  .exclusivePara span {
+    align-self: flex-start;
+  }
+
+  .registerWrapper {
+    flex-direction: column;
+  }
+
+  .registerWrapper {
+    align-items: center;
+  }
+
+  .registerWrapper input {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .registerWrapper #customButton {
+    padding: 10px 20px;
+  }
+
+
+
+}
+
+@media screen and (max-width: 430px) {
+
+  .circle{
+    display: none;
+  }
+
+  .ape{
+    width: 100%;
+  }
+
+  .mainView .imageWrapper{
+    min-height: 210px;
+  }
+
+}

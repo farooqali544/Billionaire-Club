@@ -1,0 +1,28 @@
+.button{
+    background: linear-gradient(90deg, #7918F2 48%, #4801FF 100%);
+    border:3px solid black;
+    box-shadow: -11px -7px 0px 0px black;
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1440px) {
+    .button{
+        font-size: 1.65rem;
+        padding:10px 30px;
+    }
+
+}
+
+@media screen and (max-width: 1150px) {
+    .button{
+        font-size: 1.4rem;
+        padding:10px 25px;
+    }
+    
+
+}
+

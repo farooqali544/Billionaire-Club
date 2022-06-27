@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e711a699.css",
+    "main.js": "/static/js/main.9ac41f6b.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/ape2.png": "/static/media/ape2.b27668c67ecb34d4420e.png",
+    "static/media/GoldenTicket.png": "/static/media/GoldenTicket.3f9bb35b452f52080c86.png",
+    "static/media/ape4.png": "/static/media/ape4.3e4f2945fac6f0b2ee39.png",
+    "static/media/ape3.png": "/static/media/ape3.583016ba4e21e934c77d.png",
+    "static/media/ape6.png": "/static/media/ape6.0aa93e3888d7483a06bc.png",
+    "static/media/ape1.png": "/static/media/ape1.739d80b73931284deb1b.png",
+    "static/media/ape5.png": "/static/media/ape5.f2fe700fea7729c3c6a5.png",
+    "static/media/Pattern.png": "/static/media/Pattern.287c4a93f65dd03480af.png",
+    "static/media/circletemp.png": "/static/media/circletemp.927ac31b533825952e14.png",
+    "static/media/apeThumb.png": "/static/media/apeThumb.d9971e780acc0358a757.png",
+    "index.html": "/index.html",
+    "static/media/menubar.svg": "/static/media/menubar.c1c63fedab0ca812fcc0c99b407b6bee.svg",
+    "static/media/Polygon.svg": "/static/media/Polygon.c2a005e60d023a1621bf36c4fa19e126.svg",
+    "main.e711a699.css.map": "/static/css/main.e711a699.css.map",
+    "main.9ac41f6b.js.map": "/static/js/main.9ac41f6b.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e711a699.css",
+    "static/js/main.9ac41f6b.js"
+  ]
+}

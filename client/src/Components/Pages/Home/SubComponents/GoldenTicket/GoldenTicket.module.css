@@ -1,0 +1,79 @@
+.container {
+  margin-top: 200px;
+  background: linear-gradient(90deg, #ac32e4 0%, #7918f2 48%, #4801ff 100%);
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  z-index: 2;
+  position: relative;
+  gap: 100px;
+}
+
+.container > div:first-child {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container div:first-child {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.container div:first-child h2 {
+  color: #e2c668;
+
+  font-weight: 700;
+}
+
+.container div:first-child p {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.goldenImage {
+  align-self: center;
+}
+
+.goldenImage img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    margin-top: 150px;
+  }
+
+  .goldenImage {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .goldenImage {
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    margin-top: 100px;
+    padding: 30px;
+    flex-direction: column-reverse;
+    gap: 0px;
+  }
+  .goldenImage {
+    width: 100%;
+    max-width: 550px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+.container{
+    padding: 30px 20px;
+}
+}

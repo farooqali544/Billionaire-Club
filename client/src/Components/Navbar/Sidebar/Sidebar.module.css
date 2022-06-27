@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.486);
+  z-index: 10;
+  position: fixed;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  max-width: 420px;
+  background-color: black;
+  height: 100%;
+  overflow: auto;
+  z-index: 20;
+}
+
+.sidebar span{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+  list-style: none;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 800px) {
+  .container {
+    display: none;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+    .sidebar {
+        width: 100%;
+    }
+}
